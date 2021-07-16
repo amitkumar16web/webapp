@@ -1,0 +1,39 @@
+.mySlides {display:none;}
+nav ul li {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li {
+    float: right;
+}
+.pic2{
+    float: left;
+    
+}
+.well{
+    
+}
+
+/* .myslides {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* .well{
+    background: rgba(0,0,0,0.7);
+    border: none;
+}
+
+.wellfix{
+    background: rgba(0,0,0,0.7);
+    border: none;
+    height: 150px; */
+}
+
+
+
+/* header{
+   
+} */

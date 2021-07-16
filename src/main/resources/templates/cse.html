@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>CSE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="cse/logo.png" rel="icon">
+
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<style>
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #C49F0F;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #FF9F9F;
+}
+ </style>
+</head>
+<body style="background-color: #99ff99">
+<h4><a href="/gotolibrarypage"><strong> Home </strong> </a><a href="/logout"><strong> Log Out</strong></a></h4>
+<center><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Subjects Name...."></center>
+
+
+<div class="container ">
+<table class="table table-striped table-hover" id="myTable">
+  <tr class="header">
+  	<th style="width:20%;">Faculty Name</th>
+    <th style="width:20%;">Subjects Name</th>
+    <th style="width:20%;">Branch</th>
+    <th style="width:20%;">Semester</th>
+    <th style="width:20%;">Year</th>
+    <th style="width:20%;">Status</th>
+  </tr>
+ <tr>
+ 	<td>----</td>	
+    <td>Compiler Design</td>
+    <td>CSE</td>
+    <td>6 Sem</td>
+    <td>2017</td>
+    <td onclick="openInNewTab('cse/paper/compile design-6-2017CSE.pdf');"  style="color: blue">AVL</td>
+  </tr>
+
+<tr>
+  <td>Amlan Jyoti Baruah</td>
+    <td>Computer Network</td>
+    <td>CSE</td>
+    <td>6 Sem</td> 
+    <td>2017</td>
+    <td onclick="openInNewTab('cse/paper/computer networks-6-2017CSE.pdf');"  style="color: blue">AVL</td>
+  </tr>
+
+  <tr>
+ 	<td>Dr. Sajal Saha</td>	
+    <td>DS</td>
+    <td>CSE</td>
+    <td>2 Sem</td>
+    <td>2016</td>
+    <td onclick="openInNewTab('#');"  style="color: red">Not_AVL</td>
+  </tr>
+  <tr>
+  <!-- 
+  
+ -->
+ 	<td>Pranav Kumar</td>	
+    <td>NS</td>
+    <td>CSE</td>
+    <td>8 Sem</td>
+    <td>2019</td>
+    <td onclick="openInNewTab('#');"  style="color: red">Not_AVL</td>
+  </tr>
+
+  <tr>
+    <td>Manashee Kalita</td> 
+    <td>MC</td>
+    <td>CSE</td>
+    <td>8 Sem</td>
+    <td>2019</td>
+    <td onclick="openInNewTab('#');"  style="color: red">Not_AVL</td>
+  </tr>
+
+  <tr>
+    <td>Nilakshi Gogoi</td> 
+    <td>AI</td>
+    <td>CSE</td>
+    <td>8 Sem</td>
+    <td>2019</td>
+    <td onclick="openInNewTab('#');"  style="color: red">Not_AVL</td>
+  </tr>
+
+ 	<td>Nazreena Rahman</td>	
+    <td>OS</td>
+    <td>CSE</td>
+    <td>5 Sem</td>
+    <td>2019</td>
+    <td onclick="openInNewTab('#');" style="color: red">Not_AVL</td>
+  </tr>
+
+  <td>-----</td>  
+    <td>Chemistry</td>
+    <td>CSE</td>
+    <td>1 Sem</td>
+    <td>2019</td>
+    <td onclick="openInNewTab('#');" style="color: red">Not_AVL</td>
+  </tr>
+
+  <td>-----</td>  
+    <td>Maths II</td>
+    <td>CSE</td>
+    <td>2 Sem</td>
+    <td>2014</td>
+    <td onclick="openInNewTab('');" style="color: red">Not_AVL</td>
+  
+       
+</table>
+</div><br /><br />
+
+<script src="/cse/cse.js"></script>
+
+</body>
+</html>
+

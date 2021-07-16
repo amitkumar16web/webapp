@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="registrationPage/logo.png" rel="icon">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="/registrationPage/registrationPage.css"/>
+    </head>
+    <body bgcolor="#ffe6e6">
+        <div class="imgcontainer">
+            <img src="registrationPage/avatar.png" alt="Avatar" class="avatar">
+          </div>
+
+          <form action="#" th:action="@{/register}" th:object="${form}" method="post">
+
+        
+          <div class="container">
+                <center><p style="color:red" th:text="${errors}"/></center> 
+
+        
+            
+            <label for="uname"><b>Enter Your Name</b></label>
+            <input type="text" placeholder="Please enter your name" th:field="*{name}" required>
+              <center><td style="color:red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></td></center> 
+
+            <label for="uname"><b>Enter Your Mobile No</b></label>
+            <input type="text" placeholder="Enter your mobile number" th:field="*{mobile}" required>
+
+            <label for="uname"><b>Enter Your Branch</b></label>
+            <input type="text" placeholder="Enter your branch" th:field="*{branch}" required>
+
+            <label for="uname"><b>Enter Your Semester</b></label>
+            <input type="text" placeholder="Enter your semester" th:field="*{sem}" required>
+            
+            <label for="uname"><b>Email</b></label>
+            <input type="text" placeholder="Please enter your university email" th:field="*{email}" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Please enter password" th:field="*{password_1}"  required>
+                
+
+            <button type="submit">Sign Up</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+
+
+          </div>
+        
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn"><a href="/"> Cancel</a></button>
+            <span class="psw">Already A Member?<a href="/loginpage">Log In</a></span>
+          </div>
+
+
+          </form>
+    </body>
+</html>

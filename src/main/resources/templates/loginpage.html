@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="loginpage/logo.png" rel="icon">
+        <title> Log In</title>
+        <link rel="stylesheet" href="/loginpage/loginpage.css"/>
+    </head>
+    <body bgcolor="#e5e5ff">
+        <div class="imgcontainer">
+            <img src="loginpage/avatar.png" alt="Avatar" class="avatar">
+          </div>
+
+          <form action="#" th:action="@{/login}" th:object="${form}" method="post">
+        
+          <div class="container">
+           <p style="color:red" th:text="${errormessage}"/>
+          
+            <label for="uname"><b>Email</b></label>
+            <input type="text" required th:field="*{email}" placeholder="Enter Email">
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" required th:field="*{password_1}" placeholder="Enter Password">
+                
+            <button type="submit">Log In</button>
+            <p style="color:red">Not Yet A Member?<a href="/register"> Sign Up</a></p>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+        
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn"><a href="/"> Cancel</a></button>
+            <span class="psw">Forgot <a href="/">password?</a></span>
+          </div>
+
+          </form>
+    </body>
+</html>

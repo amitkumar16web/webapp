@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link href="qzl/logo.png" rel="icon">
+    <link rel="stylesheet" href="/qzl/qzl.css">
+</head>
+<body>
+<h2><a href="/gotolibrarypage" style="color: green">Home</a></h2>
+<h1 style="text-align: center; color:#1919e6">Welcome to Company Logo Quiz!!!</h1>
+<p style="text-align: center; color: #b30000">You can use any resource you can find to answer the questions except  <strong style="color: red">90 Seconds
+</strong> </p>
+    <div id="container">
+        <div id="start">Start Quiz!</div>
+        
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <h2><a href="/qzlpage" style="color: green">Back</a></h2>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="/qzl/qzl.js"></script>
+   
+
+</body>
+</html>
