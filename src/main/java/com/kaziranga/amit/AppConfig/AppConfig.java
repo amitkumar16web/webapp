@@ -39,7 +39,6 @@ public class AppConfig {     // class name
     public DataSource mySqlDataSource() 
     {
         DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
-       // dataSourceBuilder.url("jdbc:mysql://127.0.0.1:3307/csemajorproject?serverTimezone=IST");  // DB cnctn or DB NAME csemr time zone
        dataSourceBuilder.url("jdbc:mysql://127.0.0.1:3307/moglixtp?serverTimezone=IST");  // DB cnctn or DB NAME csemr time zone
        dataSourceBuilder.username("root");
         dataSourceBuilder.password("");
